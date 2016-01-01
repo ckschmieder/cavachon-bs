@@ -92,7 +92,7 @@ and (max-width: 768px) {
 /**  nav inbody **/
 
 header .inbody {
-  background: #004080;
+  background: #586D74;
 }
 
 header .navbar.inbody {
@@ -161,6 +161,11 @@ header .inbody .navbar-brand span.subhead {
 
 /**  Page -- Information  **/
 
+#information {
+  background-color: #E4D29D;
+  background-image: linear-gradient(to bottom, #E4D29D, #CDAE50);
+}
+
 .info {
   margin: 20px 0;
   text-align: center;
@@ -185,11 +190,10 @@ and (max-width: 768px) {
   }
 }
 
-/**  Page -- Staff **/
+/**  Page -- Contact **/
 
-#staff {
-  background-color: #E4D29D;
-  background-image: linear-gradient(to bottom, #E4D29D, #CDAE50);
+#contact {
+  
 }
 
 .doctor {
@@ -244,12 +248,12 @@ and (max-width: 768px) {
 }
 
 #testimonials #janeh {
-  background: url(../images/testimonial-janeh.jpg) no-repeat center center;
+  background: url(../images/testimonial/ace3.jpg) no-repeat center center;
   background-size: cover;
 }
 
 #testimonials #johnb {
-  background: url(../images/testimonial-johnb.jpg) no-repeat center center;
+  background: url(../images/testimonial/daisyc.jpg) no-repeat center center;
   background-size: cover;
 }
 

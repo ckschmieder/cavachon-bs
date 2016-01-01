@@ -50,5 +50,7 @@ $(function() {
     } //click function
   }); //smooth scrolling
 
+  //Activate ReadMore plugin
+  $('.puppy-rm').readmore({speed: 500});
 
 });
