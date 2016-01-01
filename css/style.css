@@ -436,6 +436,14 @@ and (max-width: 768px) {
     margin: 1rem 0;
 }
 
+.testimonial-location {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+
 .testimonial-excerpt {
     font-size: 16px;
     font-size: 1.6rem;
@@ -468,6 +476,10 @@ and (max-width: 768px) {
     }
     
     .testimonial-name {
+        text-align: center;
+    }
+
+    .testimonial-location {
         text-align: center;
     }
 }
