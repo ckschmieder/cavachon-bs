@@ -484,7 +484,17 @@ and (max-width: 768px) {
     }
 }
 
+/**  Location **/
 
+/*#location {
+  background: url(../images/harrisonburg-light.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+#location .content {  
+  color: black;
+  font-weight: 300;
+}*/
 
 
 /**  Footer **/
