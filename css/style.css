@@ -159,28 +159,28 @@ header .inbody .navbar-brand span.subhead {
     }
 }
 
-/**  Page -- Services **/
+/**  Page -- Information  **/
 
-.service {
+.info {
   margin: 20px 0;
   text-align: center;
 }
 
-#services img.icon {
+#information  img.icon {
   display: block;
   width: 80px;
   margin: 0 auto;
   margin-bottom: 5px;
 }
 
-#services h3 {
+#information h3 {
   margin-bottom: 10px;
 }
 
 @media only screen 
 and (min-width: 450px)
 and (max-width: 768px) {
-  .service p {
+  .info p {
     padding: 0 20%;
   }
 }
