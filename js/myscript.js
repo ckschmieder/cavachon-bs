@@ -3,6 +3,10 @@ $(function() {
   "use strict";
 
   var topoffset = 50; //variable for menu height
+  var slideqty = $('#featured .item').length;
+  var wheight = $(window).height(); //get the height of the window
+  
+  $('.fullheight').css('height', wheight); //set to window tallness  
 
   //Activate Scrollspy
   $('body').scrollspy({
@@ -46,9 +50,5 @@ $(function() {
     } //click function
   }); //smooth scrolling
 
-
-  $('.carousel').carousel({
-    interval: false
-  });
 
 });
