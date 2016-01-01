@@ -216,94 +216,264 @@ and (max-width: 768px) {
 }
 
 /**  Page -- Testimonials **/
+  /*
+  #testimonials {
+    padding: 0;
+  }
+
+  #testimonials h2 {
+    display: none;
+  }
+
+  #testimonials blockquote {
+    margin: 0;
+    padding: 0;
+    border-left: none;
+    min-height: 500px;
+    position: relative;
+  }
+
+  #testimonials blockquote .quote {
+    background-color: rgba(255,255,255,.6);
+    padding: 20px 5%;
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+    font-weight: 400;
+    border-radius: 0 50px 0 0;
+  }
+
+  #testimonials blockquote .quote:hover {
+    background-color: rgba(239,240,196,.9);
+  }
+
+  #testimonials #janeh {
+    background: url(../images/testimonial/ace3.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  #testimonials #johnb {
+    background: url(../images/testimonial/daisyc.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  #testimonials #mcphersons {
+    background: url(../images/testimonial-mcphersons.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  #testimonials #lorraines {
+    background: url(../images/testimonial-lorraines.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  #testimonials .quote {
+    font-size: 1.2em;
+    line-height: 110%;
+    font-weight: 400;
+  }
+
+
+  #testimonials .quote .more, #testimonials .customer {
+    opacity: 0;
+    font-size: 0;
+    line-height: 0;
+    padding-top: 10px;
+  }
+
+
+  #testimonials .quote:hover .more {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    display: block;
+    opacity: 1;
+    font-size: .8em;
+    line-height: 120%;
+  }
+
+  #testimonials .quote:hover .customer {
+    display: block;
+    font-size: .7em;
+    text-align: right;
+  }
+
+  #testimonials .quote .intro::after {
+    content: '...';
+  }
+
+  #testimonials .quote:hover .intro::after {
+    content: '';
+  }*/
+
+/** Testimonials 2 **/
+
+  /*.testimonials {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .testimonial-thumb img {
+      border-radius: 210px;
+      border: 5px solid #fff;
+    }
+
+    .testimonials aside {
+      display: block;
+    }
+
+    .testimonial-excerpt {
+       font-size: 16px; 
+      font-size: 1.6rem;
+    }
+
+    .testimonials img {
+      height: auto;
+      max-width: 100%;
+    }
+
+    .testimonial-name {
+      font-weight: bold;
+      font-size: 24px;
+      font-size: 2.4rem;
+      margin: 1rem 0;
+    }
+
+    .testimonial-text {
+      float: left;
+      width: 60%;
+      margin-left: 10%;
+    }
+
+
+
+  @media screen and (min-width: 992px) {
+
+    .testimonials li {
+      width: 33.3333333333%;
+      padding: 2rem 4rem;
+      float: left;
+    }
+
+    .testimonial-thumb {
+      max-width: 210px;
+      margin: 0 auto;
+      float: none;
+    }
+
+    .testimonial-text {
+      float: none;
+      width: auto;
+      margin: 0;
+    }
+
+    .testimonial-name {
+      text-align: center;
+    }
+
+  }
+
+  @media screen and (min-width: 650px) {
+
+    .testimonials li {
+      padding: 4rem 4rem;
+    }
+
+  }
+  */
 
 #testimonials {
-  padding: 0;
+    padding: 4rem 0;
+    background: hsl(0, 0%, 90%);
+}
+.testimonials {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex:  row wrap;
+    -moz-box-flex:  row wrap;
+    -webkit-flex:  row wrap;
+    -ms-flex:  row wrap;
+    flex: row wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
-#testimonials h2 {
-  display: none;
+.testimonials li {
+    padding: 2rem 0 3rem;
+    width: 100%;
 }
 
-#testimonials blockquote {
-  margin: 0;
-  padding: 0;
-  border-left: none;
-  min-height: 500px;
-  position: relative;
+.testimonial-thumb {
+    max-width: 30%;
+    height: auto;
+    float: left;
 }
 
-#testimonials blockquote .quote {
-  background-color: rgba(255,255,255,.6);
-  padding: 20px 5%;
-  position: absolute;
-  bottom: 0;
-  width: 75%;
-  font-weight: 400;
-  border-radius: 0 50px 0 0;
+.testimonial-text {
+    float: left;
+    width: 60%;
+    margin-left: 10%;
+}
+.testimonial-thumb img {
+    border-radius: 210px;
+    border: 5px solid #fff;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
 }
 
-#testimonials blockquote .quote:hover {
-  background-color: rgba(239,240,196,.9);
+.testimonial-name {
+    font-weight: bold;
+    font-size: 24px;
+    font-size: 2.4rem;
+    margin: 1rem 0;
 }
 
-#testimonials #janeh {
-  background: url(../images/testimonial/ace3.jpg) no-repeat center center;
-  background-size: cover;
+.testimonial-excerpt {
+    font-size: 16px;
+    font-size: 1.6rem;
 }
 
-#testimonials #johnb {
-  background: url(../images/testimonial/daisyc.jpg) no-repeat center center;
-  background-size: cover;
+/* TESTIMONIALS RESPONSIVE */ 
+
+@media screen and (min-width: 650px) {
+    .testimonials li {
+        padding: 4rem 4rem;
+    }
 }
 
-#testimonials #mcphersons {
-  background: url(../images/testimonial-mcphersons.jpg) no-repeat center center;
-  background-size: cover;
+@media screen and (min-width: 992px) {
+    .testimonials li {
+        width: 33.3333333333%;
+        padding: 2rem 4rem;
+        float: left;
+    }
+    .testimonial-thumb {
+        max-width: 210px;
+        margin: 0 auto;
+        float: none;
+    }
+    
+    .testimonial-text {
+        float: none;
+        width: auto;
+        margin: 0;
+    }
+    
+    .testimonial-name {
+        text-align: center;
+    }
 }
 
-#testimonials #lorraines {
-  background: url(../images/testimonial-lorraines.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-#testimonials .quote {
-  font-size: 1.2em;
-  line-height: 110%;
-  font-weight: 400;
-}
 
 
-#testimonials .quote .more, #testimonials .customer {
-  opacity: 0;
-  font-size: 0;
-  line-height: 0;
-  padding-top: 10px;
-}
-
-
-#testimonials .quote:hover .more {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 100;
-  display: block;
-  opacity: 1;
-  font-size: .8em;
-  line-height: 120%;
-}
-
-#testimonials .quote:hover .customer {
-  display: block;
-  font-size: .7em;
-  text-align: right;
-}
-
-#testimonials .quote .intro::after {
-  content: '...';
-}
-
-#testimonials .quote:hover .intro::after {
-  content: '';
-}
 
 /**  Footer **/
 
