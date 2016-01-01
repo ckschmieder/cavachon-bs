@@ -141,11 +141,22 @@ header .inbody .navbar-brand span.subhead {
   background-size: cover;
 }
 
-/**  Page -- Mission **/
-#mission {
+/**  Page -- Welcome **/
+#welcome {
   background-color: #E4D29D;
   background-image: linear-gradient(to bottom, #EEF08A, #819A2D);
   border-top: 20px solid rgba(238, 200, 86, .5);
+}
+
+#welcome img {
+  margin-bottom: 30px;
+  margin-right: 0px;
+}
+
+@media screen and (min-width: 992px) {
+    #welcome img {
+      margin-bottom: 0px;
+    }
 }
 
 /**  Page -- Services **/
