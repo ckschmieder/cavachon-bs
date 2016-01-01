@@ -52,24 +52,24 @@ header .navbar-default .navbar-nav .active a:hover {
 /**  Navbar Brand **/
 
 header .navbar-brand {
-  background: url(../images/wisdompetlogo.svg);
+  background: url(../images/cavachon_cartoon_logo_32.png);
   background-repeat: no-repeat;
-  background-position: 15px 0;
+  background-position: 15px 5px;
   height: auto;
 }
 
 header .navbar-brand h1 {
   color: white;
   margin: 0;
-  font-size: 1.8em;
+  font-size: 1.3em;
   font-weight: 400;
-  padding-left: 105px;
+  padding-left: 85px;
 }
 
 header .navbar-brand span.subhead {
   display: block;
   font-family: "Roboto Slab", serif;
-  font-size: .6em;
+  font-size: .7em;
   font-weight: 100;
 }
 
@@ -92,7 +92,7 @@ and (max-width: 768px) {
 /**  nav inbody **/
 
 header .inbody {
-  background: rgba(104,73,49,.9);
+  background: #004080;
 }
 
 header .navbar.inbody {
