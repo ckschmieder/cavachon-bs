@@ -66,7 +66,7 @@ header .navbar-brand h1 {
   font-family: 'Oregano', cursive, serif;
   color: white;
   margin: 0;
-  font-size: 1.4em;
+  font-size: 1.1em;
   font-weight: 400;
   padding-left: 85px;
 }
@@ -123,14 +123,17 @@ header .inbody .navbar-brand {
   margin-left: 10px;
 }
 
-header .inbody .navbar-brand h1 {
-  font-size: 1.8em;
-  padding-left: 58px;
+@media screen and (min-width: 768px) {
+  header .inbody .navbar-brand h1 {
+    font-size: 1.6em;
+    padding-left: 58px;
+  }
+  header .inbody .navbar-brand span.subhead {
+  display: none;
+  }
 }
 
-header .inbody .navbar-brand span.subhead {
-  display: none;
-}
+
 
 
 
