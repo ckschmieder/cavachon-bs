@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
+@import url(https://fonts.googleapis.com/css?family=Oregano);
 
 /**  Basic Page CSS **/
 body{
@@ -17,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 /**  Header Navigation **/
 
 header .navbar {
-  padding: 30px 0;
+  padding: 20px 0;
   transition: all .5s ease-out;
 }
 
@@ -54,22 +55,26 @@ header .navbar-default .navbar-nav .active a:hover {
 header .navbar-brand {
   background: url(../images/cavachon_cartoon_logo_32.png);
   background-repeat: no-repeat;
-  background-position: 15px 5px;
+  background-position: 15px -5px;
   height: auto;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 header .navbar-brand h1 {
+  font-family: 'Oregano', cursive, serif;
   color: white;
   margin: 0;
-  font-size: 1.3em;
+  font-size: 2em;
   font-weight: 400;
   padding-left: 85px;
 }
 
 header .navbar-brand span.subhead {
-  display: block;
-  font-family: "Roboto Slab", serif;
-  font-size: .7em;
+  display: block;  
+  font-family: 'Oregano', cursive, serif;
+  /*text-align: center;*/
+  font-size: .8em;
   font-weight: 100;
 }
 
@@ -108,21 +113,18 @@ header .inbody .navbar-brand {
   background-size: 65px;
   background-position: 5px 0px;  
   margin-top: 0px;
-  padding: 5px 15px;
+  padding: 10px 15px;
   margin-left: 10px;
 }
 
 header .inbody .navbar-brand h1 {
-  font-size: 1.1em;
+  font-size: 1.8em;
   padding-left: 58px;
 }
 
 header .inbody .navbar-brand span.subhead {
   display: none;
 }
-
-
-
 
 
 /**  Page **/
@@ -144,8 +146,8 @@ header .inbody .navbar-brand span.subhead {
 /**  Page -- Welcome **/
 #welcome {
   background-color: #E4D29D;
-  background-image: linear-gradient(to bottom, #EEF08A, #819A2D);
-  border-top: 20px solid rgba(238, 200, 86, .5);
+  background-image: linear-gradient(to bottom, #EEF08A, #F8F19A);
+  border-top: 20px solid #EEC856;
 }
 
 #welcome img {
@@ -215,172 +217,6 @@ and (max-width: 768px) {
   width: 100%;
 }
 
-/**  Page -- Testimonials **/
-  /*
-  #testimonials {
-    padding: 0;
-  }
-
-  #testimonials h2 {
-    display: none;
-  }
-
-  #testimonials blockquote {
-    margin: 0;
-    padding: 0;
-    border-left: none;
-    min-height: 500px;
-    position: relative;
-  }
-
-  #testimonials blockquote .quote {
-    background-color: rgba(255,255,255,.6);
-    padding: 20px 5%;
-    position: absolute;
-    bottom: 0;
-    width: 75%;
-    font-weight: 400;
-    border-radius: 0 50px 0 0;
-  }
-
-  #testimonials blockquote .quote:hover {
-    background-color: rgba(239,240,196,.9);
-  }
-
-  #testimonials #janeh {
-    background: url(../images/testimonial/ace3.jpg) no-repeat center center;
-    background-size: cover;
-  }
-
-  #testimonials #johnb {
-    background: url(../images/testimonial/daisyc.jpg) no-repeat center center;
-    background-size: cover;
-  }
-
-  #testimonials #mcphersons {
-    background: url(../images/testimonial-mcphersons.jpg) no-repeat center center;
-    background-size: cover;
-  }
-
-  #testimonials #lorraines {
-    background: url(../images/testimonial-lorraines.jpg) no-repeat center center;
-    background-size: cover;
-  }
-
-  #testimonials .quote {
-    font-size: 1.2em;
-    line-height: 110%;
-    font-weight: 400;
-  }
-
-
-  #testimonials .quote .more, #testimonials .customer {
-    opacity: 0;
-    font-size: 0;
-    line-height: 0;
-    padding-top: 10px;
-  }
-
-
-  #testimonials .quote:hover .more {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 100;
-    display: block;
-    opacity: 1;
-    font-size: .8em;
-    line-height: 120%;
-  }
-
-  #testimonials .quote:hover .customer {
-    display: block;
-    font-size: .7em;
-    text-align: right;
-  }
-
-  #testimonials .quote .intro::after {
-    content: '...';
-  }
-
-  #testimonials .quote:hover .intro::after {
-    content: '';
-  }*/
-
-/** Testimonials 2 **/
-
-  /*.testimonials {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .testimonial-thumb img {
-      border-radius: 210px;
-      border: 5px solid #fff;
-    }
-
-    .testimonials aside {
-      display: block;
-    }
-
-    .testimonial-excerpt {
-       font-size: 16px; 
-      font-size: 1.6rem;
-    }
-
-    .testimonials img {
-      height: auto;
-      max-width: 100%;
-    }
-
-    .testimonial-name {
-      font-weight: bold;
-      font-size: 24px;
-      font-size: 2.4rem;
-      margin: 1rem 0;
-    }
-
-    .testimonial-text {
-      float: left;
-      width: 60%;
-      margin-left: 10%;
-    }
-
-
-
-  @media screen and (min-width: 992px) {
-
-    .testimonials li {
-      width: 33.3333333333%;
-      padding: 2rem 4rem;
-      float: left;
-    }
-
-    .testimonial-thumb {
-      max-width: 210px;
-      margin: 0 auto;
-      float: none;
-    }
-
-    .testimonial-text {
-      float: none;
-      width: auto;
-      margin: 0;
-    }
-
-    .testimonial-name {
-      text-align: center;
-    }
-
-  }
-
-  @media screen and (min-width: 650px) {
-
-    .testimonials li {
-      padding: 4rem 4rem;
-    }
-
-  }
-  */
 
 #testimonials {
     padding: 4rem 0;
@@ -486,15 +322,15 @@ and (max-width: 768px) {
 
 /**  Location **/
 
-/*#location {
-  background: url(../images/harrisonburg-light.jpg) no-repeat top center;
-  background-size: cover;
-}
+  /*#location {
+    background: url(../images/harrisonburg-light.jpg) no-repeat top center;
+    background-size: cover;
+  }
 
-#location .content {  
-  color: black;
-  font-weight: 300;
-}*/
+  #location .content {  
+    color: black;
+    font-weight: 300;
+  }*/
 
 
 /**  Footer **/
@@ -542,6 +378,7 @@ footer .navbar-nav>li a {
 
 blockquote {    
     border-left: 5px solid #EEC856;
+    background-color: #F8F8F8;
 }
 
 
