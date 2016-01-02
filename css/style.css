@@ -75,7 +75,7 @@ header .navbar-brand span.subhead {
 
 /**  Navbar Toggle **/
 header .navbar-toggle {
-  background-color: #279182;
+  background-color: rgba(30, 117, 246, 1);
 }
 
 header .navbar-default .navbar-toggle .icon-bar {
@@ -92,7 +92,7 @@ and (max-width: 768px) {
 /**  nav inbody **/
 
 header .inbody {
-  background: #586D74;
+  background: rgba(30, 117, 246, 1);
 }
 
 header .navbar.inbody {
@@ -500,7 +500,7 @@ and (max-width: 768px) {
 /**  Footer **/
 
 footer {
-  background: #586D74;
+  background: rgba(30, 117, 246, 1);
   color: white;
   font-size: .8em;
   padding: 20px 0 40px 0;
@@ -593,7 +593,7 @@ blockquote {
   }
 
   .form:hover{
-    border:1px solid #586D74;
+    border:1px solid rgba(30, 117, 246, 1);
   }
 
   .form:focus{
@@ -628,7 +628,7 @@ blockquote {
   }
 
   .button:hover{
-    background:#586D74;
+    background: rgba(30, 117, 246, 1);
     color:white;
   }
 
@@ -640,7 +640,7 @@ blockquote {
     height: auto;
     padding:15px;
     color:#fff;
-    background:#586D74;
+    background: rgba(30, 117, 246, 1);
     border:none;
     border-radius:3px;
     outline: none;
