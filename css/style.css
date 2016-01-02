@@ -30,6 +30,7 @@ header .navbar-default {
 header .navbar-default .navbar-nav a {
   color: white;
   padding: 5px 8px;
+  font-size: 1.6rem;
 }
 
 header .navbar-default .navbar-nav a:hover {
@@ -65,7 +66,7 @@ header .navbar-brand h1 {
   font-family: 'Oregano', cursive, serif;
   color: white;
   margin: 0;
-  font-size: 2em;
+  font-size: 1.4em;
   font-weight: 400;
   padding-left: 85px;
 }
@@ -165,6 +166,15 @@ header .inbody .navbar-brand span.subhead {
     #welcome img {
       margin-bottom: 0px;
     }
+
+    header .navbar-brand h1 {
+      font-size: 2em;
+    }
+
+    header .navbar-default .navbar-nav a {  
+      font-size: 2rem;
+    }
+
 }
 
 /**  Page -- Information  **/
@@ -200,28 +210,6 @@ and (max-width: 768px) {
 
 /**  Page -- Contact **/
 
-#contact {
-  
-}
-
-.doctor {
-  margin: 10px 0;
-}
-
-.doctor h3 {
-  font-weight: 600;
-  font-size: 1.2em;
-  color: #6F4E36;
-  padding-bottom: 5px;
-}
-
-.doctor p {
-  font-size: .8em;
-}
-
-.doctor img {
-  width: 100%;
-}
 
 
 #testimonials {
