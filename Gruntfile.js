@@ -63,8 +63,9 @@ module.exports = function (grunt) {
 					"js/script.min.js": [
 						"node_modules/jquery/dist/jquery.js",
 						"node_modules/bootstrap-sass/assets/javascripts/bootstrap.js",
-						"node_modules/masonry-layout/dist/masonry.pkgd.js",
+						"node_modules/masonry-layout/dist/masonry.pkgd.js",						
 						"node_modules/imagesloaded/imagesloaded.js",
+						"js/jquery.magnific-popup.js",
 						"node_modules/readmore.js/readmore.min.js",
 						"js/script.js"
 

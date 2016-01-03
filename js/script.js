@@ -8,6 +8,12 @@ $(function() {
   
   $('.fullheight').css('height', wheight); //set to window tallness  
 
+  //recalculates height of .fullheight elements as window is resized
+  $(window).resize(function() {
+    wheight = $(window).height(); //get the height of the window
+    $('.fullheight').css('height', wheight); //set to window tallness
+  });
+
   //Activate Scrollspy
   $('body').scrollspy({
     target: 'header .navbar',
@@ -63,5 +69,17 @@ $(function() {
   $grid.imagesLoaded().progress( function() {
     $grid.masonry();
   });  
+
+  // Initialize Magnific-Popup
+  $('.image-link').magnificPopup({
+
+    type:'image',
+
+    gallery: {
+    // options for gallery
+    enabled: true
+  },
+
+  });
 
 });

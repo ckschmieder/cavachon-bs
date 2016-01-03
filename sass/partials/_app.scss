@@ -29,8 +29,8 @@ header .navbar-default {
 
 header .navbar-default .navbar-nav a {
   color: white;
-  padding: 5px 8px;
-  font-size: 1.6rem;
+  padding: 5px 5px;
+  font-size: 1.5rem;
 }
 
 header .navbar-default .navbar-nav a:hover {
@@ -68,7 +68,7 @@ header .navbar-brand h1 {
   margin: 0;
   font-size: 1.1em;
   font-weight: 400;
-  padding-left: 85px;
+  padding-left: 80px;
 }
 
 header .navbar-brand span.subhead {
@@ -86,7 +86,7 @@ header .navbar-brand span.subhead {
 
 /**  Navbar Toggle **/
 header .navbar-toggle {
-  background-color: #279182;
+  background-color: #EEC856;
 }
 
 header .navbar-default .navbar-toggle .icon-bar {
@@ -163,9 +163,18 @@ header .inbody .navbar-brand {
   background:#FDFF83;
 }
 
+#welcome {
+  background:#EEF08A;
+  transition:background-color .5s linear;
+  -moz-transition:background-color .5s linear;
+  -webkit-transition:background-color .5s linear;
+  -ms-transition:background-color .5s linear;
+}
+
 #welcome img {
   margin-bottom: 30px;
-  margin-right: 0px;
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 992px) {
@@ -174,11 +183,12 @@ header .inbody .navbar-brand {
     }
 
     header .navbar-brand h1 {
-      font-size: 2em;
+      font-size: 1.8em;
     }
 
     header .navbar-default .navbar-nav a {  
-      font-size: 2rem;
+      font-size: 1.8rem;
+      padding: 5px 8px;
     }
 
 }
@@ -514,11 +524,5 @@ input {
 }
 
 
-#welcome {
-  background:#EEF08A;
-  transition:background-color .5s linear;
-  -moz-transition:background-color .5s linear;
-  -webkit-transition:background-color .5s linear;
-  -ms-transition:background-color .5s linear;
-}
+
 
