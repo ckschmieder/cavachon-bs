@@ -1,5 +1,16 @@
 /** Custom Styles for Gallery **/
 
 #gallery .grid div {
-	padding: 2px;
+	padding: 5px;
+	
 }
+
+.grid-item img {
+	width: 100%;
+}
+
+#gallery .grid img:hover {
+	opacity: 0.9;
+
+}
+

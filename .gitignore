@@ -4,3 +4,5 @@ node_modules
 js/script.min.js
 .sass-cache
 .sass-cache/*
+.sass-cache/**
+**.sass-cache/**

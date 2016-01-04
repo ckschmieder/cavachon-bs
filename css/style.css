@@ -7453,6 +7453,7 @@ header .inbody .navbar-brand {
   margin-bottom: 30px;
   width: 100%;
   height: auto;
+  box-shadow: 5px 5px 3px #6f6f6f;
 }
 
 @media screen and (min-width: 992px) {
@@ -7784,7 +7785,15 @@ input {
 }
 /** Custom Styles for Gallery **/
 #gallery .grid div {
-  padding: 2px;
+  padding: 5px;
+}
+
+.grid-item img {
+  width: 100%;
+}
+
+#gallery .grid img:hover {
+  opacity: 0.9;
 }
 
 * {
@@ -7808,9 +7817,15 @@ input {
 /* ---- .grid-item ---- */
 .grid-sizer,
 .grid-item {
-  width: 33.333%;
+  width: 50%;
 }
 
+@media screen and (min-width: 650px) {
+  .grid-sizer,
+  .grid-item {
+    width: 33.33%;
+  }
+}
 .grid-item {
   float: left;
 }
