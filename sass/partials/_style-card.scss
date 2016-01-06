@@ -1,0 +1,7 @@
+ /*
+The primary stylesheet for the Flexbox Cards Demo web page. This sheet pulls in all the components in order of appearance.
+*/
+
+@import 'cards/_reset.scss';
+@import 'cards/_layout.scss';
+@import 'cards/_card-styles.scss';
