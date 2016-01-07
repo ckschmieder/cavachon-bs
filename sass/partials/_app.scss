@@ -13,15 +13,27 @@ body{
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   font-weight: 400;
   margin: 0;
 }
 
-.page h2 {
-  font-family: 'Comfortaa', sans-serif;
+/**  Page **/
+
+
+.page {
+  padding: 50px 0;
 }
 
+.page h2 {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 400;
+  font-size: 1.6em;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid black;
+  padding-bottom: 4px;
+}
 
 .container, .container-fluid {
     padding-left: 20px;
@@ -31,6 +43,12 @@ h1, h2, h3, h4, h5, h6 {
 .container, .container-fluid {
     margin-left: auto;
     margin-right: auto;
+}
+
+/** Typography **/
+
+.fa-heart {
+  color: red;
 }
 
 
@@ -156,18 +174,9 @@ header .inbody .navbar-brand {
 
 
 
-/**  Page **/
-.page {
-  padding: 50px 0;
-}
 
-.page h2 {
-  font-family: 'lato', sans-serif;
-  text-align: center;
-  margin-bottom: 30px;
-}
 
-/**  Page -- Featured **/
+/** Featured **/
 #featured {
   background: url(../images/henry-full.jpg) no-repeat 75% 35%;
   background-size: cover;
@@ -175,7 +184,7 @@ header .inbody .navbar-brand {
 
 
 
-/**  Page -- Welcome **/
+/** Welcome **/
 #welcome {
   border-top: 20px solid #EEC856;
   background: #3D7EAA;
@@ -228,7 +237,7 @@ header .inbody .navbar-brand {
     border-bottom: 1px solid gainsboro;
 }
 
-/**  Page: Information  **/
+/**  Page: Info  **/
 
 #information {
   background-color: #E4D29D;
@@ -238,13 +247,18 @@ header .inbody .navbar-brand {
 .info {
   margin: 20px 0;
   text-align: center;
+  h3 {
+    font-size: 26px;
+  }
+
 }
+
 
 #information  img.icon {
   display: block;
   width: 80px;
   margin: 0 auto;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 #information h3 {
