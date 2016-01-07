@@ -7,6 +7,7 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
 @import url(https://fonts.googleapis.com/css?family=Oregano);
+@import url(https://fonts.googleapis.com/css?family=Lato|Comfortaa);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -7610,16 +7611,30 @@ body {
 }
 /**  Basic Page CSS **/
 body {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 2em;
+  font-size: 1.8rem;
   position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   margin: 0;
+}
+
+.page h2 {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.container, .container-fluid {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container, .container-fluid {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /**  Header Navigation **/
@@ -7742,34 +7757,33 @@ header .inbody .navbar-brand {
 }
 
 .page h2 {
+  font-family: 'lato', sans-serif;
   text-align: center;
   margin-bottom: 30px;
 }
 
 /**  Page -- Featured **/
 #featured {
-  background: url(../images/henry-full.jpg) no-repeat top center;
+  background: url(../images/henry-full.jpg) no-repeat 75% 35%;
   background-size: cover;
 }
 
 /**  Page -- Welcome **/
 #welcome {
-  background-color: #E4D29D;
   border-top: 20px solid #EEC856;
+  background: #3D7EAA;
+  background: -webkit-linear-gradient(to left, #3D7EAA, #FFE47A);
+  background: -webkit-linear-gradient(right, #B5E1FF, #FFE47A);
+  background: linear-gradient(to left, #B5E1FF, #FFE47A);
 }
 
-#welcome:hover {
-  background: #FDFF83;
-}
-
-#welcome {
-  background: #EEF08A;
-  transition: background-color .5s linear;
-  -moz-transition: background-color .5s linear;
-  -webkit-transition: background-color .5s linear;
-  -ms-transition: background-color .5s linear;
-}
-
+/* #welcome {
+  background:#EEF08A;
+  transition:background-color .5s linear;
+  -moz-transition:background-color .5s linear;
+  -webkit-transition:background-color .5s linear;
+  -ms-transition:background-color .5s linear;
+} */
 #welcome img {
   margin-bottom: 30px;
   width: 100%;
@@ -7791,7 +7805,18 @@ header .inbody .navbar-brand {
     padding: 5px 8px;
   }
 }
-/**  Page -- Information  **/
+/** Puppies **/
+/** Cards **/
+.card-content h2 {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: -2px;
+  margin-bottom: .5em;
+  font-weight: 400;
+  font-style: bold;
+  border-bottom: 1px solid gainsboro;
+}
+
+/**  Page: Information  **/
 #information {
   background-color: #E4D29D;
   background-image: -webkit-linear-gradient(top, #E4D29D, #CDAE50);
@@ -8106,9 +8131,14 @@ input {
   z-index: 9999;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 95vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    font-size: 2rem;
   }
 }
 /** Custom Styles for Gallery **/
