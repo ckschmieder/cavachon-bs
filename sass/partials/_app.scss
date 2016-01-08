@@ -20,9 +20,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /**  Page **/
 
-
 .page {
-  padding: 50px 0;
+    padding: 30px 0 20px;
+}
+
+@media screen and (min-width: 650px) {
+  .page {
+      padding: 50px 0;
+  }
 }
 
 .page h2 {
@@ -178,10 +183,16 @@ header .inbody .navbar-brand {
 
 /** Featured **/
 #featured {
-  background: url(../images/henry-full.jpg) no-repeat 75% 35%;
+  background: url(../images/henry-cropped_1013x1246.jpg) no-repeat top center;
   background-size: cover;
 }
 
+@media screen and (min-width: 768px) {
+  #featured {
+  background: url(../images/henry-full.jpg) no-repeat 35% 0%;
+  background-size: cover;
+  }
+}
 
 
 /** Welcome **/
@@ -225,6 +236,7 @@ header .inbody .navbar-brand {
 }
 
 /** Puppies **/
+
 
 /** Cards **/
 
@@ -587,12 +599,19 @@ input {
     padding: 0px;
   }
 
-@media screen and (max-width: 480px) {
+
+.page h2 {
+    font-size: 1.4em;
+    font-size: 7.0vw;
+}
+
+@media screen and (min-width: 481px) {
   .page h2 {
-      font-size: 1.4em;
+      font-size: 1.5em;
       font-size: 7.0vw;
     }
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
@@ -606,7 +625,14 @@ input {
   }
 }
 
+@media screen and (min-width: 650px) {
+.page h2 {
+      font-size: 2.0em;
+    }
+}
+
 @media screen and (min-width: 768px) {
+
   .input-container-right {
     padding-left: 15px;   
   }
