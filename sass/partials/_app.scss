@@ -96,12 +96,13 @@ header .navbar-default .navbar-nav .active a:hover {
 /**  Navbar Brand **/
 
 header .navbar-brand {
-  background: url(../images/cavachon_cartoon_logo_32.png);
+  background: url(../images/cavachon_cartoon_logo_32_cropped.png);
   background-repeat: no-repeat;
-  background-position: 15px -5px;
+  background-position: center left;
+  background-size: contain;
   height: auto;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 header .navbar-brand h1 {
