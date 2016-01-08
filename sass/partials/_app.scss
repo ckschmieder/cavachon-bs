@@ -98,20 +98,21 @@ header .navbar-default .navbar-nav .active a:hover {
 header .navbar-brand {
   background: url(../images/cavachon_cartoon_logo_32_cropped.png);
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: 0% -1px;
   background-size: contain;
   height: auto;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  margin: 3px 0 3px 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 header .navbar-brand h1 {
   font-family: 'Oregano', cursive, serif;
   color: white;
   margin: 0;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 400;
-  padding-left: 80px;
+  padding-left: 30px;
 }
 
 header .navbar-brand span.subhead {
@@ -159,11 +160,11 @@ header .navbar.inbody .navbar-nav {
 }
 
 header .inbody .navbar-brand {
-  background-size: 65px;
-  background-position: 5px 0px;  
-  margin-top: 0px;
-  padding: 10px 15px;
-  margin-left: 10px;
+  /* background-size: 65px; */
+  background-position: initial;  
+  // margin-top: 0px;
+  // padding: 10px 15px;
+  // margin-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -172,11 +173,9 @@ header .inbody .navbar-brand {
     padding-left: 58px;
   }
   header .inbody .navbar-brand span.subhead {
-  display: none;
+
   }
 }
-
-
 
 
 
@@ -226,7 +225,7 @@ header .inbody .navbar-brand {
     }
 
     header .navbar-brand h1 {
-      font-size: 1.8em;
+      // font-size: 1.8em;
     }
 
     header .navbar-default .navbar-nav a {  
