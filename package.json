@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/matgargano/SchmiederCavachon.git"
+    "url": "https://github.com/ckschmieder/cavachon_bs.git"
   },
-  "author": "",
+  "author": "Chris Schmieder",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/matgargano/SchmiederCavachon/issues"
+    "url": "https://github.com//ckschmieder/cavachon_bs/issues"
   },
-  "homepage": "https://github.com/matgargano/SchmiederCavachon",
+  "homepage": "https://github.com/ckschmieder/cavachon_bs",
   "dependencies": {
     
     "imagesloaded": "^4.0.0",
