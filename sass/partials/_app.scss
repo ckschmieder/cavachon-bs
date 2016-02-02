@@ -2,7 +2,49 @@
 @import url(https://fonts.googleapis.com/css?family=Oregano);
 @import url(https://fonts.googleapis.com/css?family=Lato|Comfortaa);
 
-/**  Basic Page CSS **/
+/**
+ * TODO: This is a todo statement that describes an atomic task to be completed
+ *   at a later date. It wraps after 80 characters and following lines are
+ *   indented by 2 spaces.
+ */
+
+
+/* ==========================================================================
+[Table of contents]
+
+0. Color Variables
+1. Base Styles / body
+2. Header / #header
+  2.1. Navigation  / .navbar
+  2.2. Navbar-Brand / .navbar-brand
+  2.3. Navbar Inbody / .navbar.inbody
+3. Featured / #featured
+4. Welcome / #welcome
+5. Puppies / #puppies
+6. Information / #information
+7. Testimonials / #testimonials
+8. Contact / #contact
+9. Footer / #footer
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   0. Color Variables
+   ========================================================================== */
+
+$mustard: #FFDB58;
+$nevada: #586D74;
+
+
+
+/* ==========================================================================
+   1. Base Styles / body
+   ========================================================================== */
+
+
 body{
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -11,14 +53,15 @@ body{
 }
 
 
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Comfortaa", sans-serif;
   font-weight: 400;
   margin: 0;
 }
 
-/**  Page **/
+
+/* Page  / .page
+   ========================================================================== */
 
 .page {
     padding: 30px 0 20px;
@@ -31,9 +74,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page h2 {
-  font-family: 'Comfortaa', sans-serif;
-  font-weight: 400;
-  font-size: 1.6em;
+  font-size: 1.4em;
+  font-size: 7.0vw;
   text-align: center;
   margin-bottom: 30px;
   border-bottom: 2px solid black;
@@ -50,14 +92,20 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
 }
 
-/** Typography **/
+/** Font Awesome **/
 
 .fa-heart {
   color: red;
 }
 
+/* ==========================================================================
+   2. Header
+   ========================================================================== */
 
-/**  Header Navigation **/
+
+
+/* 2.1. Navigation  / .navbar
+   ========================================================================== */
 
 header .navbar {
   padding: 20px 0;
@@ -76,14 +124,14 @@ header .navbar-default .navbar-nav a {
 }
 
 header .navbar-default .navbar-nav a:hover {
-  color: #EEC856;
+  color: $mustard;
 }
 
 header .navbar-default .navbar-nav .active a {
   font-weight: 700;
-  color: #EEC856;
+  color: $mustard;
   background: transparent;
-  border-bottom: 4px solid #EEC856;
+  border-bottom: 4px solid $mustard;
   text-shadow: none;
 }
 
@@ -93,7 +141,9 @@ header .navbar-default .navbar-nav .active a:hover {
   text-shadow: none;
 }
 
-/**  Navbar Brand **/
+
+/* 2.2. Navbar-Brand / .navbar-brand
+   ========================================================================== */
 
 header .navbar-brand {
   background: url(../images/cavachon_cartoon_logo_32_cropped.png);
@@ -124,30 +174,30 @@ header .navbar-brand span.subhead {
 }
 
 .navbar-default .navbar-nav>.active>a:focus {
-  color: #EEC856;
+  color: $mustard;
   background: transparent;
 }
 
 /**  Navbar Toggle **/
 header .navbar-toggle {
-  background-color: #EEC856;
+  background-color: $mustard;
 }
 
 header .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
 }
 
-@media only screen
-and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   header .navbar-collapse.in {
     background-color: rgba(0,0,0, .5);
   }
 }
 
-/**  nav inbody **/
+/* 2.3. Navbar Inbody / .navbar.inbody
+   ========================================================================== */
 
 header .inbody {
-  background: #586D74;
+  background: $nevada;
 }
 
 header .navbar.inbody {
@@ -172,16 +222,12 @@ header .inbody .navbar-brand {
     font-size: 1.6em;
     padding-left: 58px;
   }
-  header .inbody .navbar-brand span.subhead {
-
-  }
 }
 
+/* ==========================================================================
+   3. Featured / #featured
+   ========================================================================== */
 
-
-
-
-/** Featured **/
 #featured {
   background: url(../images/henry-cropped_1013x1246.jpg) no-repeat top center;
   background-size: cover;
@@ -194,15 +240,16 @@ header .inbody .navbar-brand {
   }
 }
 
+/* ==========================================================================
+   4. Welcome / #welcome
+   ========================================================================== */
 
-/** Welcome **/
 #welcome {
-  border-top: 20px solid #EEC856;
+  border-top: 20px solid $mustard;
   background: #3D7EAA;
   background: -webkit-linear-gradient(to left, #3D7EAA , #FFE47A);
   background: linear-gradient(to left, #B5E1FF , #FFE47A);   
 }
-
 
 /* #welcome {
   background:#EEF08A;
@@ -235,8 +282,10 @@ header .inbody .navbar-brand {
 
 }
 
-/** Puppies **/
 
+/* ==========================================================================
+   5. Puppies / #puppies
+   ========================================================================== */
 
 /** Cards **/
 
@@ -249,7 +298,9 @@ header .inbody .navbar-brand {
     border-bottom: 1px solid gainsboro;
 }
 
-/**  Page: Info  **/
+/* ==========================================================================
+   6. Information / #information
+   ========================================================================== */
 
 #information {
   background-color: #E4D29D;
@@ -262,9 +313,7 @@ header .inbody .navbar-brand {
   h3 {
     font-size: 26px;
   }
-
 }
-
 
 #information  img.icon {
   display: block;
@@ -285,11 +334,9 @@ and (max-width: 768px) {
   }
 }
 
-/**  Page -- Contact **/
-
-
-
-
+/* ==========================================================================
+   7. Testimonials / #testimonials
+   ========================================================================== */
 
 #testimonials {
     padding: 4rem 0;
@@ -299,6 +346,7 @@ and (max-width: 768px) {
     background: linear-gradient(to left, #DAD299 , #B0DAB9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         
 }
+
 .testimonials {
     margin: 0;
     padding: 0;
@@ -362,7 +410,7 @@ and (max-width: 768px) {
     font-size: 1.6rem;
 }
 
-/* TESTIMONIALS RESPONSIVE */ 
+/** Testimonials Responsive **/ 
 
 @media screen and (min-width: 650px) {
     .testimonials li {
@@ -397,64 +445,12 @@ and (max-width: 768px) {
     }
 }
 
-/**  Location **/
-
-  /*#location {
-    background: url(../images/harrisonburg-light.jpg) no-repeat top center;
-    background-size: cover;
-  }
-
-  #location .content {  
-    color: black;
-    font-weight: 300;
-  }*/
-
-
-/**  Footer **/
-
-footer {
-  background: #586D74;
-  color: white;
-  font-size: .8em;
-  padding: 20px 0 40px 0;
-}
-
-footer a {
-  color: #E0E6AE;
-}
-
-footer a:hover {
-  color: #EEC856 !important;
-}
-
-footer .phone {
-  font-size: 1.4em;
-  font-weight: 700;
-  color: #E0E6AE;
-}
-
-footer .navbar {
-  margin-bottom: 0;
-  min-height: 0;
-}
-
-footer .navbar-default {
-  background-color: transparent;
-  border: none;
-  margin-right: 40px;
-}
-
-footer .navbar-nav>li a {
-  padding-top: 0;
-  padding-bottom: 0;
-  text-decoration: underline;
-  color: #EEC856 !important;
-}
-
-/** Contact Us **/
+/* ==========================================================================
+   8. Contact / #contact
+   ========================================================================== */
 
 blockquote {    
-    border-left: 5px solid #EEC856;
+    border-left: 5px solid $mustard;
     background-color: #F8F8F8;
     .fa-quote-left {
       font-size: 1.9em;
@@ -463,10 +459,9 @@ blockquote {
 }
 
 
+/* Contact Form
+   ========================================================================== */
 
-
-
-/** Contact Form  **/
 
   .input-container {
     padding: 0px;
@@ -502,6 +497,7 @@ blockquote {
     margin:25px auto 0;
   }
 
+
 /* Input Styles */
 
   .form{
@@ -518,13 +514,13 @@ blockquote {
   }
 
   .form:hover{
-    border:1px solid #586D74;
+    border:1px solid $nevada;
   }
 
   .form:focus{
     color: white;
     outline: none;
-    border:1px solid #EEC856;
+    border:1px solid $mustard;
   }
 
   .textarea{
@@ -553,7 +549,7 @@ blockquote {
   }
 
   .button:hover{
-    background:#586D74;
+    background:$nevada;
     color:white;
   }
 
@@ -565,7 +561,7 @@ blockquote {
     height: auto;
     padding:15px;
     color:#fff;
-    background:#586D74;
+    background:$nevada;
     border:none;
     border-radius:3px;
     outline: none;
@@ -578,32 +574,75 @@ blockquote {
     -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
   }
 
-  .form-btn:hover{
-    background:#111;
-    color: white;
-    border:none;
-  }
-
-  .form-btn:active{
-    opacity: 0.9;
-  }
-center{
-  margin-top:330px;
+.form-btn:hover {
+  background: #111;
+  color: white;
+  border: none;
 }
+
+.form-btn:active {
+  opacity: 0.9;
+}
+
+center {
+  margin-top: 330px;
+}
+
 input {
-    position: relative;
-    z-index: 1025;
+  position: relative;
+  z-index: 1025;
 }
 
 .contact-stacked {
-    padding: 0px;
-  }
-
-
-.page h2 {
-    font-size: 1.4em;
-    font-size: 7.0vw;
+  padding: 0px;
 }
+
+
+/* ==========================================================================
+   9. Footer
+   ========================================================================== */
+
+footer {
+  background: $nevada;
+  color: white;
+  font-size: .8em;
+  padding: 20px 0 40px 0;
+}
+
+footer a {
+  color: #E0E6AE;
+}
+
+footer a:hover {
+  color: $mustard !important;
+}
+
+footer .phone {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #E0E6AE;
+}
+
+footer .navbar {
+  margin-bottom: 0;
+  min-height: 0;
+}
+
+footer .navbar-default {
+  background-color: transparent;
+  border: none;
+  margin-right: 40px;
+}
+
+footer .navbar-nav>li a {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-decoration: underline;
+  color: $mustard !important;
+}
+
+
+
 
 @media screen and (min-width: 481px) {
   .page h2 {

@@ -99,5 +99,16 @@ $(function() {
 
   });
 
+  // Detects if user is using a touch device
+  function is_touch_device() {
+   return (('ontouchstart' in window)
+        || (navigator.MaxTouchPoints > 0)
+        || (navigator.msMaxTouchPoints > 0));
+  }
+  
+  // If not on a touch device, change text to "click" 
+  if (!is_touch_device()) {
+   document.getElementById('gallery-hint').innerText = "(click to enlarge)";
+  }
 
 }); 
