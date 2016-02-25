@@ -66,6 +66,7 @@ module.exports = function (grunt) {
 						"node_modules/masonry-layout/dist/masonry.pkgd.js",						
 						"node_modules/imagesloaded/imagesloaded.js",
 						"js/jquery.magnific-popup.js",
+						"js/picturefill.min.js",
 						"node_modules/readmore.js/readmore.min.js",
 						"js/script.js"
 
